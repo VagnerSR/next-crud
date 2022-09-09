@@ -16,9 +16,9 @@ function Tabela(props: TabelaProps) {
             return (
                 <tr key={cliente.id}
                     className={`${i % 2 === 0 ? 'bg-purple-200' : 'bg-purple-100'}`}>
-                    <td className="text-left p-4">{cliente.id}</td>
                     <td className="text-left p-4">{cliente.nome}</td>
-                    <td className="text-left p-4">{cliente.idade}</td>
+                    <td className="text-left p-4">{cliente.funcao}</td>
+                    <td className="text-left p-4">link</td>
                     {exibirAcoes ? renderizarAcoes(cliente) : false}
                 </tr>
             )
@@ -42,7 +42,7 @@ function Tabela(props: TabelaProps) {
 
 
                 {props.clienteExcluido ? (
-                    <button onClick={() => props.clienteSelecionado?.(cliente)}
+                    <button onClick={() => props.clienteExcluido?.(cliente)}
                     className={`
                     flex justify-center items-center
                     text-red-500 rounded-full p-2 m-1
@@ -62,11 +62,11 @@ function Tabela(props: TabelaProps) {
                    text-gray-100
                    bg-gradient-to-r from-purple-500 to-purple-800`}>
                 <tr>
-                    <th className="text-left p-4">Código</th>
-
                     <th className="text-left p-4">Nome</th>
 
-                    <th className="text-left p-4">Idade</th>
+                    <th className="text-left p-4">Função</th>
+
+                    <th className="text-left p-4">Link</th>
 
                     {exibirAcoes ? <th className="p-4">Ações</th> : false}
                 </tr>

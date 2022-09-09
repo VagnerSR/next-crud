@@ -1,17 +1,17 @@
 export default class Cliente {
     #id: string
     #nome: string
-    #idade: number
+    #funcao: string
 
 
-    constructor(nome: string, idade: number, id: string = null) {
+    constructor(nome: string, funcao: string, id: string = null) {
         this.#nome = nome
-        this.#idade = idade
+        this.#funcao = funcao
         this.#id = id
     }
 
     static vazio() {
-        return new Cliente('', 0)
+        return new Cliente('', '')
     }
 
 
@@ -23,7 +23,7 @@ export default class Cliente {
         return this.#nome
     }
 
-    get idade() {
-        return this.#idade
+    get funcao() {
+        return this.#funcao
     }
 }

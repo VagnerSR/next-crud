@@ -13,7 +13,7 @@ function Formulario(props: FormularioProps) {
     const id = props.cliente?.id
 
     const [nome, setNome] = useState(props.cliente?.nome ?? '')
-    const [idade, setIdade] = useState(props.cliente?.idade ?? 0)
+    const [funcao, setFuncao] = useState(props.cliente?.funcao ?? '')
 
     return (
         <div>
@@ -26,14 +26,13 @@ function Formulario(props: FormularioProps) {
                      valorMudou={setNome}
                      className="mb-5"/>
 
-            <Entrada texto="Idade" 
-                     tipo="number" 
-                     valor={idade}
-                     valorMudou={setIdade}/>
+            <Entrada texto="Função"  
+                     valor={funcao}
+                     valorMudou={setFuncao}/>
 
             <div className="flex justify-end mt-7">
                 <Botao className="bg-gradient-to-r from-blue-400 to-blue-700 mr-2"
-                       onClick={() => props.clienteMudou?.(new Cliente(nome, +idade, id))}>
+                       onClick={() => props.clienteMudou?.(new Cliente(nome, funcao, id))}>
                     {id ? 'Alterar' : 'Salvar'}
                 </Botao>
 
