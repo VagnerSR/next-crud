@@ -8,7 +8,8 @@ function Botao(props: BotaoProps) {
     return (
         <button onClick={props.onClick}
                 className={`
-                text-white px-4 py-2 rounded-md
+                px-2 py-1 lg:px-4 lg:py-2 xl:px-4 xl:py-2 2xl:px-4 2xl:py-2
+                text-white rounded-md
                 ${props.className}`}>
             {props.children}
         </button>

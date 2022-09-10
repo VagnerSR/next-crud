@@ -8,6 +8,7 @@ function useClientes() {
   const [cliente, setCliente] = useState<Cliente>(Cliente.vazio())
   const [clientes, setClientes] = useState<Cliente[]>([])
   
+  
 const { tabelaVisivel,  
         exibirTabela, 
         exibirFormulario 

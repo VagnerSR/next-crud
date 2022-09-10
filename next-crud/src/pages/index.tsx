@@ -20,11 +20,12 @@ export default function Home() {
 
   return (
     <div className={`
+          min-w-screen
           flex justify-center items-center h-screen
           bg-gradient-to-r from-blue-300 to-pink-300
           text-white` }>
 
-      <Layout titulo="Cadstro Simples">
+      <Layout titulo="Cadastre um herói de Overwatch">
 
         {tabelaVisivel ? (
           <>
