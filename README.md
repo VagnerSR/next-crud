@@ -1,7 +1,7 @@
 # CRUD App - Next.JS
 
 ## CRUD Next.js
-This project was developed during an Udemy course, with the intent to practice and get a little perspective on the back-end integration with the data base. 
+This project was developed to practice and gain some insights into integrating the back-end with a database. 
 
 ## Technologies:
 Next.JS 12.2<br />
@@ -9,11 +9,11 @@ Tailwind v3<br />
 Firebase 8.8.0
 
 ## A little more on the project
-The Project is very simple, a basic CRUD, it looks same as it was presented on the class, I just added Overwatch to it, changed the name/age to character name/function and once you submit a new character it gives you the link to the character page.<br />
-The link `https://playoverwatch.com/pt-br/heroes/${heroi}/`, in which `heroi` is the name input filtered, without spaces, punctuation, and for Soldier:76 I had to an `if`, because the project is in Portuguese and the Overwatch link is in English.
+The project is a simple CRUD application with a focus on managing characters. It builds upon the basic CRUD functionality by incorporating Overwatch characters. Instead of the traditional name/age fields, it utilizes character name and function. Upon submitting a new character, the application generates a link to the character's page.
+
+The generated link follows the format: `https://playoverwatch.com/pt-br/heroes/${hero}/`, where `${hero}` represents the filtered input name without spaces or punctuation. Additionally, an `if` statement is implemented specifically for the character "Soldier: 76" due to language differences between the project (in Portuguese) and the Overwatch link (in English).
 
 
 ## More information
-Udemy Course Link: https://www.udemy.com/course/react-redux-pt/<br />
 My e-mail: vagnerrosnoski@gmail.com <br />
 Overwatch: https://playoverwatch.com/
